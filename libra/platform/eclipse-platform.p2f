@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?p2f version='1.0.0'?>
+<p2f version='1.0.0'>
+  <ius size='9'>
+    <iu id='org.eclipse.egit.feature.group' name='Eclipse EGit' version='1.1.0.201109151100-r'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/indigo'/>
+        <repository location='http://marketplace.eclipse.org/repo/'/>
+      </repositories>
+    </iu>
+    <iu id='epp.package.jee' name='Eclipse IDE for Java EE Developers' version='1.4.1.20110909-1818'>
+      <repositories size='2'>
+        <repository location='http://download.eclipse.org/releases/indigo'/>
+        <repository location='http://marketplace.eclipse.org/repo/'/>
+      </repositories>
+    </iu>
+    <iu id='org.zeroturnaround.eclipse.debug.feature.feature.group' name='JRebel Eclipse Debugger Integration (Optional)' version='1.4.1.201111071655'>
+      <repositories size='1'>
+        <repository location='http://www.zeroturnaround.com/update-site'/>
+      </repositories>
+    </iu>
+    <iu id='org.zeroturnaround.eclipse.feature.feature.group' name='JRebel Eclipse Integration' version='1.5.1.201111071655'>
+      <repositories size='1'>
+        <repository location='http://www.zeroturnaround.com/update-site'/>
+      </repositories>
+    </iu>
+    <iu id='org.zeroturnaround.eclipse.wtp.feature.feature.group' name='JRebel WTP Integration (Optional)' version='1.4.3.201111071655'>
+      <repositories size='1'>
+        <repository location='http://www.zeroturnaround.com/update-site'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.libra.facet.feature.feature.group' name='OSGi Bundle Facet (Incubation)' version='0.1.1.201109131144'>
+      <repositories size='5'>
+        <repository location='http://download.eclipse.org/libra/maintenance/snapshot'/>
+        <repository location='http://download.eclipse.org/libra/nightly'/>
+        <repository location='http://download.eclipse.org/releases/indigo'/>
+        <repository location='http://download.eclipse.org/webtools/repository/indigo'/>
+        <repository location='http://marketplace.eclipse.org/repo/'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.libra.framework.editor.feature.feature.group' name='OSGi Framework Editor (Incubation)' version='0.1.0.201111141626'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/libra/nightly'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.libra.framework.feature.feature.group' name='OSGi Framework Launchers (Incubation)' version='0.1.0.201111141626'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/libra/nightly'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.libra.warproducts.feature.feature.group' name='WAR Products (Incubation)' version='0.1.1.201109131144'>
+      <repositories size='5'>
+        <repository location='http://download.eclipse.org/libra/maintenance/snapshot'/>
+        <repository location='http://download.eclipse.org/libra/nightly'/>
+        <repository location='http://download.eclipse.org/releases/indigo'/>
+        <repository location='http://download.eclipse.org/webtools/repository/indigo'/>
+        <repository location='http://marketplace.eclipse.org/repo/'/>
+      </repositories>
+    </iu>
+  </ius>
+</p2f>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.EquinoxLauncher">
+<booleanAttribute key="append.args" value="true"/>
+<booleanAttribute key="automaticAdd" value="true"/>
+<booleanAttribute key="automaticValidate" value="false"/>
+<stringAttribute key="bootstrap" value=""/>
+<stringAttribute key="checked" value="[NONE]"/>
+<booleanAttribute key="clearConfig" value="false"/>
+<stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/equinox-gemini-web"/>
+<booleanAttribute key="default" value="true"/>
+<booleanAttribute key="default_auto_start" value="true"/>
+<intAttribute key="default_start_level" value="4"/>
+<booleanAttribute key="includeOptional" value="true"/>
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#10;"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog -console"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="${jrebel_args} -Dworkspace=${workspace_loc} -Declipse.ignoreApp=true -Dosgi.noShutdown=true"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:platform}"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<booleanAttribute key="show_selected_only" value="false"/>
+<stringAttribute key="target_bundles" value="com.springsource.javax.activation@default:default,com.springsource.javax.ejb@default:default,com.springsource.javax.mail@default:default,com.springsource.javax.persistence@default:default,com.springsource.javax.transaction@default:default,com.springsource.javax.xml.bind@default:default,com.springsource.javax.xml.rpc@default:default,com.springsource.javax.xml.soap@default:default,com.springsource.javax.xml.stream@default:default,com.springsource.org.aopalliance@default:default,com.springsource.org.apache.catalina.ha@default:false,com.springsource.org.apache.catalina.tribes@default:false,com.springsource.org.apache.catalina@default:default,com.springsource.org.apache.commons.logging@default:default,com.springsource.org.apache.coyote@default:false,com.springsource.org.apache.el@default:default,com.springsource.org.apache.jasper@default:false,com.springsource.org.apache.juli.extras@default:default,com.springsource.org.apache.tomcat.api@default:default,com.springsource.org.apache.tomcat.util@default:false,com.springsource.org.eclipse.jdt.core.compiler.batch@default:default,com.springsource.slf4j.api@default:default,com.springsource.slf4j.nop@default:false,javax.annotation@default:default,javax.el@default:default,javax.inject@default:default,javax.servlet.jsp@default:default,javax.servlet@default:default,org.apache.log4j@default:default,org.eclipse.core.jobs@default:default,org.eclipse.equinox.app@default:default,org.eclipse.equinox.common@2:true,org.eclipse.equinox.ds@1:true,org.eclipse.equinox.registry@default:default,org.eclipse.equinox.servletbridge.extensionbundle@default:false,org.eclipse.equinox.simpleconfigurator@1:true,org.eclipse.equinox.util@default:default,org.eclipse.gemini.web.core@default:true,org.eclipse.gemini.web.extender@default:true,org.eclipse.gemini.web.tomcat@default:true,org.eclipse.net4j.jms.api@default:default,org.eclipse.osgi.services@default:default,org.eclipse.osgi@-1:true,org.eclipse.virgo.util.common@default:default,org.eclipse.virgo.util.io@default:default,org.eclipse.virgo.util.math@default:default,org.eclipse.virgo.util.osgi@default:default,org.eclipse.virgo.util.parser.manifest@default:default,org.springframework.aop@default:default,org.springframework.beans@default:default,org.springframework.context@default:default,org.springframework.core@default:default,org.springframework.osgi.core@default:default,org.springframework.osgi.io@default:default"/>
+<booleanAttribute key="tracing" value="false"/>
+<booleanAttribute key="useCustomFeatures" value="false"/>
+<booleanAttribute key="useDefaultConfigArea" value="true"/>
+<stringAttribute key="workspace_bundles" value="pl.caltha.osgi.libra.util@default:default,pl.caltha.osgi.libra.web@default:default"/>
+</launchConfiguration>

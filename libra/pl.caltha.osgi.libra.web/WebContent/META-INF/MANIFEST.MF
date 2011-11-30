@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WAB Bundle
+Bundle-SymbolicName: pl.caltha.osgi.libra.web
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: WEB-INF/classes/
+Bundle-Vendor: caltha.pl
+Export-Package: pl.caltha.osgi.libra.web
+Require-Bundle: pl.caltha.osgi.libra.util;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Web-ContextPath: /libra
+Import-Package: javax.el,
+ javax.servlet,
+ javax.servlet.annotation,
+ javax.servlet.http,
+ javax.servlet.jsp,
+ javax.servlet.jsp.el,
+ javax.servlet.jsp.tagext,
+ pl.caltha.osgi.libra.util
