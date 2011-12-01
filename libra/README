@@ -1,0 +1,31 @@
+This example is using the following toolchain:
+
+- Eclipse IDE for Java EE Developers 3.7.1 (Indigo SR1)
+- OSGi Bundle Facet 0.1.1 (part of Indigo release)
+- JRebel (optional)
+- Gemini Web 2.0.1 
+
+See for details platform/eclipse-platform.p2f 
+
+Beginner hint: you can use File > Import > Install > Install software items from file wizard 
+In this case it's recommended to download Indigo SR1 JEE edition and start from there.
+
+If you happen to have JRebel license around you can play around with it.
+rebel.xml files and provided launch configration are tweaked to compensate for workspace 
+location in the filesystem, but they make an assumption that the git repo will be cloned 
+to a directory named 'enterprise-osgi-examples' inside the workspace directory.
+
+After cloning the repository use Import projects > Import existing projects on /libra subfolder, select all three.
+
+After the import you need to switch to correct target platform to clear the build errors:
+Window > Preferences > Plug-in development > Target platform, Select gemini-web-2.0.1
+Restetting the platform will cause download of a pile of bundles from the network.
+
+When done, open Run Configrations dialog and find equinox-gemini-web under OSGi Framework category. 
+
+Launch it and open http://localhost:8080/libra in the browser.
+
+If you have JRebel try editing the html file and java sources. Changes should be visible at next page refresh.
+
+
+
