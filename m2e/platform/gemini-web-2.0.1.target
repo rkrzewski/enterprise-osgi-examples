@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="gemini-web-2.0.1" sequenceNumber="12">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.springsource.org.aopalliance" version="1.0.0"/>
+<unit id="com.springsource.org.apache.commons.logging" version="1.1.1"/>
+<unit id="com.springsource.org.apache.el" version="7.0.21"/>
+<unit id="com.springsource.org.apache.jasper" version="7.0.21"/>
+<unit id="com.springsource.org.apache.juli.extras" version="7.0.21"/>
+<unit id="com.springsource.org.apache.tomcat.api" version="7.0.21"/>
+<unit id="com.springsource.org.apache.catalina" version="7.0.21"/>
+<unit id="com.springsource.org.apache.catalina.ha" version="7.0.21"/>
+<unit id="com.springsource.org.apache.catalina.tribes" version="7.0.21"/>
+<unit id="com.springsource.org.apache.tomcat.util" version="7.0.21"/>
+<unit id="com.springsource.org.apache.coyote" version="7.0.21"/>
+<unit id="org.eclipse.virgo.util.common" version="3.0.1.RELEASE"/>
+<unit id="org.eclipse.gemini.web.feature.feature.jar" version="2.0.1.RELEASE"/>
+<unit id="com.springsource.org.eclipse.jdt.core.compiler.batch" version="3.6.1"/>
+<unit id="org.eclipse.gemini.web.core" version="2.0.1.RELEASE"/>
+<unit id="org.eclipse.gemini.web.extender" version="2.0.1.RELEASE"/>
+<unit id="org.eclipse.gemini.web.tomcat" version="2.0.1.RELEASE"/>
+<unit id="org.eclipse.virgo.util.io" version="3.0.1.RELEASE"/>
+<unit id="com.springsource.javax.activation" version="1.1.1"/>
+<unit id="com.springsource.javax.ejb" version="3.0.0"/>
+<unit id="com.springsource.javax.mail" version="1.4.0"/>
+<unit id="org.eclipse.virgo.util.parser.manifest" version="3.0.1.RELEASE"/>
+<unit id="com.springsource.javax.persistence" version="1.0.0"/>
+<unit id="com.springsource.javax.xml.soap" version="1.3.0"/>
+<unit id="com.springsource.javax.transaction" version="1.1.0"/>
+<unit id="com.springsource.javax.xml.bind" version="2.1.7"/>
+<unit id="com.springsource.javax.xml.rpc" version="1.1.0.v20110517"/>
+<unit id="com.springsource.javax.xml.stream" version="1.0.1"/>
+<unit id="javax.el" version="2.2.0.v201105051105"/>
+<unit id="javax.annotation" version="1.1.0.v201105051105"/>
+<unit id="javax.servlet.jsp" version="2.2.0.v201103241009"/>
+<unit id="org.eclipse.virgo.util.math" version="3.0.1.RELEASE"/>
+<unit id="org.eclipse.virgo.util.osgi" version="3.0.1.RELEASE"/>
+<unit id="javax.servlet" version="3.0.0.v201103241009"/>
+<unit id="com.springsource.slf4j.api" version="1.6.1"/>
+<unit id="com.springsource.slf4j.nop" version="1.6.1"/>
+<unit id="org.springframework.aop" version="3.0.5.RELEASE"/>
+<unit id="org.springframework.beans" version="3.0.5.RELEASE"/>
+<unit id="org.springframework.context" version="3.0.5.RELEASE"/>
+<unit id="org.springframework.core" version="3.0.5.RELEASE"/>
+<unit id="org.springframework.osgi.core" version="1.2.1"/>
+<unit id="org.springframework.osgi.io" version="1.2.1"/>
+<repository location="http://download.eclipse.org/gemini/updates/web/2.0.1/"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.equinox.core.feature.feature.group" version="1.0.1.R37x_v20110907-7K7VFBYDzbeA3ynMZ98cDL15A4A"/>
+<repository location="http://download.eclipse.org/releases/indigo"/>
+</location>
+</locations>
+<environment>
+<os>linux</os>
+<ws>gtk</ws>
+<arch>x86</arch>
+</environment>
+</target>

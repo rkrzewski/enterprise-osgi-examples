@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?p2f version='1.0.0'?>
+<p2f version='1.0.0'>
+  <ius size='3'>
+    <iu id='org.eclipse.m2e.feature.feature.group' name='m2e - Maven Integration for Eclipse' version='1.1.0.20111108-0328'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/technology/m2e/milestones/1.1/1.1.0.20111108-0328'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.m2e.logback.feature.feature.group' name='m2e - slf4j over logback logging (Optional)' version='1.1.0.20111108-0328'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/technology/m2e/milestones/1.1/1.1.0.20111108-0328'/>
+      </repositories>
+    </iu>
+    <iu id='org.eclipse.libra.facet.feature.feature.group' name='OSGi Bundle Facet (Incubation)' version='0.1.1.201109131144'>
+      <repositories size='1'>
+        <repository location='http://download.eclipse.org/releases/indigo'/>
+      </repositories>
+    </iu>
+  </ius>
+</p2f>

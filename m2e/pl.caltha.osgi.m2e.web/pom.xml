@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>pl.caltha.osgi.m2e</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../pl.caltha.osgi.m2e.parent</relativePath>
+  </parent>
+
+  <artifactId>web</artifactId>
+  <packaging>bundle</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>pl.caltha.test</groupId>
+      <artifactId>util-bundle</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>${groupId}.${artifactId}-${version}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <configuration>
+          <manifestLocation>src/main/webapp/META-INF</manifestLocation>
+          <instructions>
+            <Require-Bundle>pl.caltha.osgi.m2e.util;bundle-version="0.0.1"</Require-Bundle>          
+            <_wab>src/main/webapp</_wab>
+            <Bundle-Classpath>WEB-INF/classes/</Bundle-Classpath>
+            <Web-ContextPath>/m2e</Web-ContextPath>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
