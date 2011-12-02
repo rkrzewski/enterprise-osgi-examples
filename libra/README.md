@@ -58,7 +58,7 @@ I did:
   is a problem with module structure displayed in this view. `pl.caltha.osgi.libra.util` module is 
   nested under `pl.caltha.osgi.libra.web`, which is correct - but it appears /twice/. Furthermore
   each of these two instances of `pl.caltha.osgi.libra.util` appear to contain two more copies of 
-  the latter module. See [Screenshot](images/add_remove_problem.png). When I attempt to add 
+  the latter module. See [Screenshot](libra/images/add_remove_problem.png). When I attempt to add 
   `pl.caltha.osgi.libra.web` to the server, there's an exception thrown while closing the dialog, 
   a blank error window appears, then a `StackOverflowError` is reported. It occurs because 
   `org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:2913)` goes into infinite 
