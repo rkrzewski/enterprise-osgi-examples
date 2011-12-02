@@ -9,7 +9,7 @@ This example is using the following tool chain:
 - JRebel (optional)
 - Gemini Web 2.0.1 
 
-For details, see: [here](platform/eclipse-platform.p2f) 
+For details, see: [here](libra/platform/eclipse-platform.p2f) 
 
 <h3>Project import</h3>
 
