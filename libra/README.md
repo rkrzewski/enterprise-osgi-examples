@@ -35,7 +35,7 @@ Launch it and open `http://localhost:8080/libra` in the browser.
 If you have JRebel try editing the html file and java sources. Changes should be visible 
 at next page refresh.
 
-<h3>Running - Eclipse Libra / WTP server Lanucher - Equinox</h3>
+<h3>Running - Eclipse Libra / WTP server lanucher</h3>
 
 Eclipse Libra provides OSGi framework launchers that integrate with WTP server infrastructure.
 
@@ -46,7 +46,7 @@ I did:
 - Create new Server, choose `Eclipse Libra > Equinox 3.6+ Runtime Instance` (right click in view's
   area)
 - Configure runtime environment, I've used Equinox 3.8M3
-- Add and Remove resources view appars, close it for now.
+- Add and Remove resources view appears, close it for now.
 - Open server definition (double click the server in Servers view), navigate to `Target Platform 
   Profile` tab, Click `Add...`, select `Software Site` select Indigo site in `work with` combo, 
   uncheck `Group by category`, find and select `Equinox Core Function`. Click OK. Click `Add...` 
@@ -66,5 +66,6 @@ I did:
   is removed.
 - I've noticed another issue: when I deploy only `pl.caltha.osgi.libra.util` and start the server, 
   the server is stuck in the state `[Started, Republish]`. Clicking `Publish` button on the 
-  server's toolbar causes `Export plugins` dialog to appear, but `Republish` status does not go away.
+  server's toolbar causes `Export plugins` dialog to appear, but `Republish` status does not go 
+  away.
 
