@@ -1,0 +1,2 @@
+Private-Package: pl.caltha.osgi.bndtools.cmd
+Service-Component: pl.caltha.osgi.bndtools.cmd.GreetingCommand
