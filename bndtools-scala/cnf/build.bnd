@@ -7,3 +7,5 @@
 #Git-Descriptor: ${system;git describe --dirty --always}
 #Git-SHA: ${system;git rev-list -1 HEAD}
 
+bin:          target/classes
+target-dir:   target/bnd
