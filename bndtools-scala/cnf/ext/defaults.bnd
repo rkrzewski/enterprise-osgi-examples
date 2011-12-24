@@ -10,8 +10,8 @@ project.testpath        = ${p-testpath;:}
 -verbose:     true
 project:      ${basedir}
 src:          src
-bin:          bin
-target-dir:   generated
+bin:          target/classes
+target-dir:   target/bnd
 target:       ${project}/${target-dir}
 build:        ${workspace}/cnf
 p:            ${basename;${project}}

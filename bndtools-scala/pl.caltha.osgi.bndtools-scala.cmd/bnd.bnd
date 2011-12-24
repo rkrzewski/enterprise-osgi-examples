@@ -1,14 +1,7 @@
 Bundle-Version: 1.0.0
 Private-Package: pl.caltha.osgi.bndtools.scala.cmd
 Service-Component: *
--buildpath: osgi.core,\
-	osgi.cmpn,\
-	biz.aQute.bnd.annotation,\
-	junit.osgi,\
-	org.apache.felix.shell,\
-	pl.caltha.osgi.bndtools-scala.api,\
-	pl.caltha.osgi.bndtools-scala.impl
--runfw: org.apache.felix.framework;version='[4.0.1,4.0.1]'
+-runfw: org.apache.felix.framework
 -runrequire: bundle:(symbolicname=org.apache.felix.shell.tui),\
 	bundle:(symbolicname=org.apache.felix.scr),\
 	bundle:(symbolicname=pl.caltha.osgi.bndtools-scala.api),\

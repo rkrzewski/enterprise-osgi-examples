@@ -1,17 +1,11 @@
 Private-Package: pl.caltha.osgi.bndtools.scala.web
 Service-Component: *
--buildpath: osgi.core,\
-	osgi.cmpn,\
-	biz.aQute.bnd.annotation,\
-	pl.caltha.osgi.bndtools-scala.api,\
-	javax.servlet
 -runfw: org.apache.felix.framework
 -runrequire: bundle:(symbolicname=pl.caltha.osgi.bndtools-scala.web),\
 	bundle:(symbolicname=pl.caltha.osgi.bndtools-scala.impl),\
 	bundle:(symbolicname=org.apache.felix.http.jetty),\
 	bundle:(symbolicname=org.apache.felix.http.whiteboard),\
 	bundle:(symbolicname=org.apache.felix.scr)
--resolve: auto
 -runbundles: pl.caltha.osgi.bndtools-scala.impl;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/releaserepo/pl.caltha.osgi.bndtools-scala.impl/pl.caltha.osgi.bndtools-scala.impl-1.0.0.jar;version='[1.0.0,1.0.1)',\
 	org.apache.felix.http.whiteboard;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.http.whiteboard/org.apache.felix.http.whiteboard-2.2.0.jar;version='[2.2.0,2.2.1)',\
 	pl.caltha.osgi.bndtools-scala.api;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/releaserepo/pl.caltha.osgi.bndtools-scala.api/pl.caltha.osgi.bndtools-scala.api-1.0.0.jar;version='[1.0.0,1.0.1)',\
