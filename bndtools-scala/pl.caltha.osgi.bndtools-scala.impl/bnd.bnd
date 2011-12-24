@@ -1,0 +1,13 @@
+-runbundles: osgi.cmpn,\
+	org.apache.felix.scr,\
+	org.apache.felix.shell,\
+	org.apache.felix.shell.tui
+Private-Package: pl.caltha.osgi.bndtools.scala.impl
+Service-Component: *
+-runfw: org.apache.felix.framework;version='[4.0.1,4.0.1]'
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	junit.osgi,\
+	pl.caltha.osgi.bndtools-scala.api;version=latest
+Bundle-Version: 1.0.0

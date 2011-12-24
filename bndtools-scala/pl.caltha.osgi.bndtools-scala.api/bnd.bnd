@@ -1,0 +1,3 @@
+Export-Package: pl.caltha.osgi.bntools.scala.api
+-runfw: org.apache.felix.framework;version='[4.0.1,4.0.1]'
+Bundle-Version: 1.0.0

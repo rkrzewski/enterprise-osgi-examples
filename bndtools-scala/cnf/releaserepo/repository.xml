@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
+
+<repository lastmodified='20111224020802.800' name='Release'>
+  <resource id='pl.caltha.osgi.bndtools-scala.api/1.0.0' presentationname='pl.caltha.osgi.bndtools-scala.api' symbolicname='pl.caltha.osgi.bndtools-scala.api' uri='pl.caltha.osgi.bndtools-scala.api/pl.caltha.osgi.bndtools-scala.api-1.0.0.jar' version='1.0.0'>
+    <size>
+      2391
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='pl.caltha.osgi.bndtools-scala.api'/>
+      <p n='symbolicname' v='pl.caltha.osgi.bndtools-scala.api'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='pl.caltha.osgi.bntools.scala.api'/>
+      <p n='uses' v='scala.reflect'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=scala.reflect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.reflect
+    </require>
+  </resource>
+  <resource id='pl.caltha.osgi.bndtools-scala.cmd/1.0.0' presentationname='pl.caltha.osgi.bndtools-scala.cmd' symbolicname='pl.caltha.osgi.bndtools-scala.cmd' uri='pl.caltha.osgi.bndtools-scala.cmd/pl.caltha.osgi.bndtools-scala.cmd-1.0.0.jar' version='1.0.0'>
+    <size>
+      4330
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='pl.caltha.osgi.bndtools-scala.cmd'/>
+      <p n='symbolicname' v='pl.caltha.osgi.bndtools-scala.cmd'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.component)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.annotation.component ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.shell ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=pl.caltha.osgi.bntools.scala.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package pl.caltha.osgi.bntools.scala.api ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=scala)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala
+    </require>
+    <require extend='false' filter='(&amp;(package=scala.collection)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.collection
+    </require>
+    <require extend='false' filter='(&amp;(package=scala.reflect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.reflect
+    </require>
+  </resource>
+  <resource id='pl.caltha.osgi.bndtools-scala.impl/1.0.0' presentationname='pl.caltha.osgi.bndtools-scala.impl' symbolicname='pl.caltha.osgi.bndtools-scala.impl' uri='pl.caltha.osgi.bndtools-scala.impl/pl.caltha.osgi.bndtools-scala.impl-1.0.0.jar' version='1.0.0'>
+    <size>
+      3262
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='pl.caltha.osgi.bndtools-scala.impl'/>
+      <p n='symbolicname' v='pl.caltha.osgi.bndtools-scala.impl'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.component)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.annotation.component ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=pl.caltha.osgi.bntools.scala.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package pl.caltha.osgi.bntools.scala.api ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=scala)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala
+    </require>
+    <require extend='false' filter='(&amp;(package=scala.collection.mutable)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.collection.mutable
+    </require>
+    <require extend='false' filter='(&amp;(package=scala.reflect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.reflect
+    </require>
+  </resource>
+</repository>
