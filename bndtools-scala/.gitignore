@@ -1,6 +1,6 @@
 .obrcache/
 .cache
-generated/
-bin/
 target/
 .settings/
+.project
+.classpath
