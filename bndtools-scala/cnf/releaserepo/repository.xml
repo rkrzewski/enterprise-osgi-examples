@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20111224020802.800' name='Release'>
+<repository lastmodified='20111225135804.474' name='Release'>
   <resource id='pl.caltha.osgi.bndtools-scala.api/1.0.0' presentationname='pl.caltha.osgi.bndtools-scala.api' symbolicname='pl.caltha.osgi.bndtools-scala.api' uri='pl.caltha.osgi.bndtools-scala.api/pl.caltha.osgi.bndtools-scala.api-1.0.0.jar' version='1.0.0'>
     <size>
       2391
@@ -71,6 +71,35 @@
     </require>
     <require extend='false' filter='(&amp;(package=scala.collection.mutable)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package scala.collection.mutable
+    </require>
+    <require extend='false' filter='(&amp;(package=scala.reflect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala.reflect
+    </require>
+  </resource>
+  <resource id='pl.caltha.osgi.bndtools-scala.web/1.0.0' presentationname='pl.caltha.osgi.bndtools-scala.web' symbolicname='pl.caltha.osgi.bndtools-scala.web' uri='pl.caltha.osgi.bndtools-scala.web/pl.caltha.osgi.bndtools-scala.web-1.0.0.jar' version='1.0.0'>
+    <size>
+      3799
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='pl.caltha.osgi.bndtools-scala.web'/>
+      <p n='symbolicname' v='pl.caltha.osgi.bndtools-scala.web'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=aQute.bnd.annotation.component)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package aQute.bnd.annotation.component
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.servlet.http
+    </require>
+    <require extend='false' filter='(&amp;(package=pl.caltha.osgi.bntools.scala.api)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package pl.caltha.osgi.bntools.scala.api
+    </require>
+    <require extend='false' filter='(&amp;(package=scala)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package scala
     </require>
     <require extend='false' filter='(&amp;(package=scala.reflect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package scala.reflect
