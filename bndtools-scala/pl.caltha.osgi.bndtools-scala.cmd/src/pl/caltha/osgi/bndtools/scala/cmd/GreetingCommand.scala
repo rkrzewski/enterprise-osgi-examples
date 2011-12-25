@@ -13,7 +13,9 @@ class GreetingCommand extends Command {
   var greetingService: Greeting = null
   
   @Reference 
-  def setGreetingService(g: Greeting): Unit = { greetingService = g }
+  def setGreetingService(greeting: Greeting) = { 
+    greetingService = greeting 
+  }
 
   def getName() = "greet"
 
@@ -21,7 +23,7 @@ class GreetingCommand extends Command {
 
   def getUsage() = "greet <name>"
 
-  def execute(line: String, out: PrintStream, err: PrintStream): Unit = {
+  def execute(line: String, out: PrintStream, err: PrintStream) = {
     line.split("\\s+") match {
       case Array(_, name) => println(greetingService.sayHello(name))
       case _ =>
