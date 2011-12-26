@@ -6,13 +6,21 @@ Service-Component: *
 	bundle:(symbolicname=pl.caltha.osgi.bndtools-scala.impl),\
 	bundle:(symbolicname=org.apache.felix.http.jetty),\
 	bundle:(symbolicname=org.apache.felix.http.whiteboard),\
-	bundle:(symbolicname=org.apache.felix.scr)
+	bundle:(symbolicname=org.apache.felix.scr),\
+	bundle:(symbolicname=org.apache.felix.webconsole),\
+	bundle:(symbolicname=org.apache.felix.configadmin),\
+	bundle:(symbolicname=org.apache.felix.metatype),\
+	bundle:(symbolicname=org.apache.felix.fileinstall)
 -runbundles: pl.caltha.osgi.bndtools-scala.impl;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/pl.caltha.osgi.bndtools-scala.impl/target/bnd/pl.caltha.osgi.bndtools-scala.impl.jar;version=latest,\
+	org.apache.felix.fileinstall;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.fileinstall/org.apache.felix.fileinstall-3.1.10.jar;version='[3.1.10,3.1.11)',\
 	org.apache.felix.http.whiteboard;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.http.whiteboard/org.apache.felix.http.whiteboard-2.2.0.jar;version='[2.2.0,2.2.1)',\
-	pl.caltha.osgi.bndtools-scala.api;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/pl.caltha.osgi.bndtools-scala.api/target/bnd/pl.caltha.osgi.bndtools-scala.api.jar;version=latest,\
-	scala-library;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/scala-library/scala-library-2.9.1.jar;version='[2.9.1,2.9.2)',\
+	pl.caltha.osgi.bndtools-scala.api;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/releaserepo/pl.caltha.osgi.bndtools-scala.api/pl.caltha.osgi.bndtools-scala.api-1.0.0.jar;version='[1.0.0,1.0.1)',\
+	org.apache.felix.metatype;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.metatype/org.apache.felix.metatype-1.0.4.jar;version='[1.0.4,1.0.5)',\
+	org.apache.felix.configadmin;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.configadmin/org.apache.felix.configadmin-1.2.8.jar;version='[1.2.8,1.2.9)',\
+	osgi.cmpn;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/osgi.cmpn/osgi.cmpn-4.2.0.jar;version='[4.2.0,4.2.1)',\
 	biz.aQute.junit;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/biz.aQute.junit/biz.aQute.junit-1.0.0.jar;version='[1.0.0,1.0.1)',\
+	scala-library;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/scala-library/scala-library-2.9.1.jar;version='[2.9.1,2.9.2)',\
 	org.apache.felix.scr;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar;version='[1.6.0,1.6.1)',\
 	org.apache.felix.http.jetty;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.http.jetty/org.apache.felix.http.jetty-2.2.0.jar;version='[2.2.0,2.2.1)',\
 	biz.aQute.bndlib;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/biz.aQute.bndlib/biz.aQute.bndlib-1.51.0.jar;version='[1.51.0,1.51.1)',\
-	osgi.cmpn;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/osgi.cmpn/osgi.cmpn-4.2.0.jar;version='[4.2.0,4.2.1)'
+	org.apache.felix.webconsole;resolution=file:/home/rafal/workspaces/osgi-bndtools-scala/enterprise-osgi-examples/bndtools-scala/cnf/repo/org.apache.felix.webconsole/org.apache.felix.webconsole-3.1.8.jar;version='[3.1.8,3.1.9)'
