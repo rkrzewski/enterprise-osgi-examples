@@ -1,18 +1,15 @@
 -runfw: org.apache.felix.framework;version='[4,5)'
-
--runbundles: org.apache.felix.shell;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell/org.apache.felix.shell-1.4.2.jar;version='[1.4.2,1.4.3)',\
-	org.apache.felix.shell.tui;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell.tui/org.apache.felix.shell.tui-1.4.1.jar;version='[1.4.1,1.4.2)',\
-	pl.caltha.osgi.bndtools.impl.provider;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.impl/generated/pl.caltha.osgi.bndtools.impl.provider.jar;version=latest,\
-	org.apache.felix.http.whiteboard;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.http.whiteboard/org.apache.felix.http.whiteboard-2.2.0.jar;version='[2.2.0,2.2.1)',\
-	org.apache.felix.fileinstall;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.fileinstall/org.apache.felix.fileinstall-3.1.10.jar;version='[3.1.10,3.1.11)',\
-	org.apache.felix.log;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.log/org.apache.felix.log-1.0.1.jar;version='[1.0.1,1.0.2)',\
-	org.apache.felix.configadmin;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.configadmin/org.apache.felix.configadmin-1.2.8.jar;version='[1.2.8,1.2.9)',\
-	osgi.cmpn;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/osgi.cmpn/osgi.cmpn-4.2.0.jar;version='[4.2.0,4.2.1)',\
-	pl.caltha.osgi.bndtools.web;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.web/generated/pl.caltha.osgi.bndtools.web.jar;version=latest,\
-	org.apache.felix.scr;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar;version='[1.6.0,1.6.1)',\
-	org.apache.felix.http.jetty;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.http.jetty/org.apache.felix.http.jetty-2.2.0.jar;version='[2.2.0,2.2.1)',\
-	pl.caltha.osgi.bndtools.api;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.api/generated/pl.caltha.osgi.bndtools.api.jar;version=latest
-
+-runbundles: org.apache.felix.http.jetty;version='[2.2.0,2.2.1)',\
+	pl.caltha.osgi.bndtools.impl.provider;version=latest,\
+	org.apache.felix.shell;version='[1.4.2,1.4.3)',\
+	org.apache.felix.configadmin;version='[1.2.8,1.2.9)',\
+	org.apache.felix.fileinstall;version='[3.1.4,3.1.5)',\
+	pl.caltha.osgi.bndtools.api;version=latest,\
+	org.apache.felix.scr;version='[1.6.0,1.6.1)',\
+	pl.caltha.osgi.bndtools.web;version=latest,\
+	org.apache.felix.http.whiteboard;version='[2.2.0,2.2.1)',\
+	org.apache.felix.shell.tui;version='[1.4.1,1.4.2)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)'
 -runrequire: bundle:(symbolicname=org.apache.felix.shell),\
 	bundle:(symbolicname=org.apache.felix.shell.tui),\
 	bundle:(symbolicname=pl.caltha.osgi.bndtools.web),\

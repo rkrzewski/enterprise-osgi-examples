@@ -1,16 +1,15 @@
 -runfw: org.apache.felix.framework;version='[4,5)'
-
--runbundles: org.apache.felix.shell;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell/org.apache.felix.shell-1.4.2.jar;version='[1.4.2,1.4.3)',\
-	org.apache.felix.shell.tui;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell.tui/org.apache.felix.shell.tui-1.4.1.jar;version='[1.4.1,1.4.2)',\
-	pl.caltha.osgi.bndtools.impl.provider;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.impl/generated/pl.caltha.osgi.bndtools.impl.provider.jar;version=latest,\
-	pl.caltha.osgi.bndtools.impl.command;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.impl/generated/pl.caltha.osgi.bndtools.impl.command.jar;version=latest,\
-	org.apache.felix.scr;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar;version='[1.6.0,1.6.1)',\
-	pl.caltha.osgi.bndtools.api;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.api/generated/pl.caltha.osgi.bndtools.api.jar;version=latest,\
-	osgi.cmpn;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/osgi.cmpn/osgi.cmpn-4.2.0.jar;version='[4.2.0,4.2.1)'
-
+-runbundles: pl.caltha.osgi.bndtools.api;version=latest,\
+	org.apache.felix.scr;version='[1.6.0,1.6.1)',\
+	org.apache.felix.shell.tui;version='[1.4.1,1.4.2)',\
+	pl.caltha.osgi.bndtools.impl.provider;version=latest,\
+	pl.caltha.osgi.bndtools.impl.command;version=latest,\
+	org.apache.felix.shell;version='[1.4.2,1.4.3)',\
+	org.apache.felix.configadmin;version='[1.2.8,1.2.9)'
 -runrequire: bundle:(symbolicname=org.apache.felix.shell),\
 	bundle:(symbolicname=org.apache.felix.shell.tui),\
 	bundle:(symbolicname=pl.caltha.osgi.bndtools.impl.provider),\
 	bundle:(symbolicname=org.apache.felix.scr),\
-	bundle:(symbolicname=pl.caltha.osgi.bndtools.impl.command)
+	bundle:(symbolicname=pl.caltha.osgi.bndtools.impl.command),\
+	bundle:(symbolicname=org.apache.felix.configadmin)
 -resolve: auto

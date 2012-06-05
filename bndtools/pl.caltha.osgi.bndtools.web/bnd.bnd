@@ -1,30 +1,5 @@
--runbundles: org.apache.felix.shell;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell/org.apache.felix.shell-1.4.2.jar;version='[1.4.2,1.4.3)',\
-	org.apache.felix.shell.tui;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.shell.tui/org.apache.felix.shell.tui-1.4.1.jar;version='[1.4.1,1.4.2)',\
-	pl.caltha.osgi.bndtools.impl.provider;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.impl/generated/pl.caltha.osgi.bndtools.impl.provider.jar;version=latest,\
-	org.apache.felix.fileinstall;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.fileinstall/org.apache.felix.fileinstall-3.1.10.jar;version='[3.1.10,3.1.11)',\
-	org.apache.felix.http.whiteboard;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.http.whiteboard/org.apache.felix.http.whiteboard-2.2.0.jar;version='[2.2.0,2.2.1)',\
-	org.apache.felix.scr;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar;version='[1.6.0,1.6.1)',\
-	pl.caltha.osgi.bndtools.api;resolution=file:/home/rafal/workspaces/osgi-bndtools/pl.caltha.osgi.bndtools.api/generated/pl.caltha.osgi.bndtools.api.jar;version=latest,\
-	org.apache.felix.http.jetty;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.http.jetty/org.apache.felix.http.jetty-2.2.0.jar;version='[2.2.0,2.2.1)',\
-	org.apache.felix.configadmin;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/org.apache.felix.configadmin/org.apache.felix.configadmin-1.2.8.jar;version='[1.2.8,1.2.9)',\
-	osgi.cmpn;resolution=file:/home/rafal/workspaces/osgi-bndtools/cnf/repo/osgi.cmpn/osgi.cmpn-4.2.0.jar;version='[4.2.0,4.2.1)'
 Service-Component: pl.caltha.osgi.bndtools.web.TestServlet
--runfw: org.apache.felix.framework
--buildpath: osgi.core,\
-	osgi.cmpn,\
-	biz.aQute.bnd.annotation,\
-	junit.osgi,\
+-buildpath: biz.aQute.bnd.annotation,\
 	org.apache.felix.http.jetty,\
-	org.apache.felix.http.whiteboard,\
 	pl.caltha.osgi.bndtools.api;version=latest
 Private-Package: pl.caltha.osgi.bndtools.web
--runrequire: bundle:(symbolicname=org.apache.felix.fileinstall),\
-	bundle:(symbolicname=org.apache.felix.configadmin),\
-	bundle:(symbolicname=org.apache.felix.http.jetty),\
-	bundle:(symbolicname=org.apache.felix.http.whiteboard),\
-	bundle:(symbolicname=org.apache.felix.scr),\
-	bundle:(symbolicname=pl.caltha.osgi.bndtools.impl.provider),\
-	bundle:(&(symbolicname=org.apache.felix.shell)(version>=1.4.2)),\
-	bundle:(symbolicname=org.apache.felix.shell.tui)
--resolve: auto
--runproperties: felix.fileinstall.disableConfigSave=false
