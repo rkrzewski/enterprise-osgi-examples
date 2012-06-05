@@ -1,2 +1,3 @@
-repo/.obrcache
-cache/.obr
+.obrcache/
+.obr/
+*~
