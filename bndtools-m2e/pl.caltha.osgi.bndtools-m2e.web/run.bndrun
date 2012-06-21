@@ -1,0 +1,35 @@
+-runfw: org.apache.felix.framework;version='[4,5)'
+-runee: JavaSE-1.6
+
+-runbundles: org.apache.felix.gogo.command;version='[0.12.0,0.12.1)',\
+	org.apache.felix.http.jetty;version='[2.2.0,2.2.1)',\
+	org.apache.felix.metatype;version='[1.0.4,1.0.5)',\
+	osgi.cmpn;version='[4.2.1,4.2.2)',\
+	aQute.xray.plugin;version='[1.0.0,1.0.1)',\
+	org.apache.felix.shell;version='[1.4.2,1.4.3)',\
+	org.apache.felix.configadmin;version='[1.2.8,1.2.9)',\
+	pl.caltha.osgi.bndtools-m2e.api;version=latest,\
+	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	org.apache.felix.scr;version='[1.6.0,1.6.1)',\
+	pl.caltha.osgi.bndtools-m2e.impl;version=latest,\
+	org.apache.felix.webconsole;version='[3.1.8,3.1.9)',\
+	org.apache.felix.http.whiteboard;version='[2.2.0,2.2.1)',\
+	org.apache.felix.bundlerepository;version='[1.6.7,1.6.8)',\
+	pl.caltha.osgi.bndtools-m2e.web;version=latest,\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)'
+
+## Uncomment if you need to change the HTTP port
+#-runproperties: org.osgi.service.http.port=8080
+
+-runrequire: bundle:(symbolicname=org.apache.felix.gogo.shell),\
+	bundle:(symbolicname=org.apache.felix.gogo.command),\
+	bundle:(symbolicname=org.apache.felix.webconsole),\
+	bundle:(symbolicname=org.apache.felix.configadmin),\
+	bundle:(symbolicname=org.apache.felix.metatype),\
+	bundle:(symbolicname=org.apache.felix.log),\
+	bundle:(&(symbolicname=osgi.cmpn)(version>=4.2)),\
+	bundle:(&(symbolicname=org.apache.felix.scr)(version>=1.6.0)),\
+	bundle:(symbolicname=pl.caltha.osgi.bndtools-m2e.impl),\
+	bundle:(symbolicname=pl.caltha.osgi.bndtools-m2e.web),\
+	bundle:(symbolicname=org.apache.felix.http.whiteboard)

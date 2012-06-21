@@ -1,0 +1,7 @@
+.obrcache/
+.cache/
+cache/
+target/
+.settings/
+.project
+.classpath
